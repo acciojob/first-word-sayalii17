@@ -1,16 +1,9 @@
 function firstWord(s) {
   // your code here
-	let s= s.trim();
-
-	if(s.length === 0)   return " ";
+	let res= s.trim().split(" ");
 	
-	let idx= s.indexOf(" ");
-
-	if(idx== -1)   return s;
-	
-	return s.substr(0,idx);
+	return res[0];
 }
-
 // Do not change the code below
 
 const s = prompt("Enter String:");
